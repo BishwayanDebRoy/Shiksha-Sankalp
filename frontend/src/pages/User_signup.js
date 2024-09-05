@@ -24,7 +24,7 @@
 //         },
 //       );
 //   };
-   
+
 
 //   return (
 //     <div className="signup-container">
@@ -48,7 +48,7 @@
 //           <input type="text" name="user_role"  required />
 //         </div>
 
-        
+
 
 //         <div className="form-group">
 //           <label>Stream</label>
@@ -78,9 +78,13 @@ const UserSignup = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // emailjs
+    //   .sendForm('service_pz0d4f9', 'template_qa64b3p', form.current, {
+    //     publicKey: 'mNdVg35iqS7y-chUY',
+    //   })
     emailjs
-      .sendForm('service_pz0d4f9', 'template_qa64b3p', form.current, {
-        publicKey: 'mNdVg35iqS7y-chUY',
+      .sendForm('service_k7d590k', 'template_gsciu2r', form.current, {
+        publicKey: 'gytasH1WPEcNd7WK8',
       })
       .then(
         () => {
