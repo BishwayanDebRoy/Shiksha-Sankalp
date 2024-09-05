@@ -16,13 +16,7 @@ require('dotenv/config')
 // app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
 
 app.use(express.json({ limit: '10mb' }))
-app.use(cors({
-    origin: ['https://shiksha-sankalp.vercel.app/'],
-    methods: "GET, POST,",
-    credentials: true,
-
-
-}));
+app.use(cors());
 
 
 
