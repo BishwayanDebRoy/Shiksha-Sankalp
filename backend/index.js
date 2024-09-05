@@ -20,7 +20,7 @@ app.use(cors({
 
     // origin: ["https://shiksha-sankalp-webapp.vercel.app/"],
     origin: ["https://shiksha-sankalp-app.vercel.app"],
-    methods: ["POST", "GET"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 }
 ));
