@@ -19,7 +19,7 @@ app.use(express.json({ limit: '10mb' }))
 app.use(cors({
 
     // origin: ["https://shiksha-sankalp-webapp.vercel.app/"],
-    origin: ["https://shiksha-sankalp-app.vercel.app/"],
+    origin: ["https://shiksha-sankalp-app.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }
